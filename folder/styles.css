@@ -1,0 +1,60 @@
+/* Reset and Setup */
+*, *::before, *::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui, sans-serif;
+    background: #0b0e14;
+    color: #e6edf3;
+}
+
+/* Color and design variables */
+:root
+{
+    --primary: #4f9cff; /* Accent blue color */
+    --text: #e6edf3; /* Light text color */
+}
+
+/* Header layout */
+.site-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111624;
+    padding: 0.75rem 1rem;
+    position: sticky;
+    top: 0;
+}
+/* Logo styling */
+.logo
+{
+color: var(--text);
+text-decoration: none;
+font-weight: bold;
+}
+/* navigation links */
+.site-nav ul
+{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.site-nav a 
+{
+    text-decoration: none;
+    color: var(--text);
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+/* Hover and active link styles */
+.site-nav a:hover,
+.site-nav a.active
+{
+    background: var(--primary);
+    color: #000;
+}
